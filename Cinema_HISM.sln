@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobil.Android", "Mobil\Mobil.Android\Mobil.Android.csproj", "{51EA322E-7CC8-4D1F-AB4E-56B2B24F3CBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobil", "Mobil\Mobil\Mobil.csproj", "{529E0C6B-CC2D-4160-A908-B5054AD935C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mobil", "Mobil\Mobil\Mobil.csproj", "{529E0C6B-CC2D-4160-A908-B5054AD935C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

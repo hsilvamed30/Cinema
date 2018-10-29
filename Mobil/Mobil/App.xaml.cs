@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Mobil.Views;
+using Mobil.Modelo;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Mobil
@@ -11,8 +13,12 @@ namespace Mobil
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //es para que el Email pueda navegar 
+            MainPage = new NavigationPage(new LoginPage());
+       
         }
+
+        
 
         protected override void OnStart()
         {

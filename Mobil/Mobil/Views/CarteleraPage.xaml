@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobil.Views.CarteleraPage"
+             Title="Cartelera">
+
+    <ListView x:Name="ListPeliculas" ItemSelected="Item_Selecte" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <StackLayout Orientation="Vertical">
+                            <Image Source="{Binding Imagen}" HorizontalOptions="Start"/>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Nombre}" FontAttributes="Bold" FontSize="12" AnchorX="4"/>
+                                <Label Text="{Binding Recomendacion}" FontSize="10"/>
+                                <Label Text="{Binding Duracion}" FontSize="10" />
+                                <Label Text="{Binding FechaEstreno}" FontSize="10" HorizontalTextAlignment="End"/>
+                            </StackLayout >
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
+    

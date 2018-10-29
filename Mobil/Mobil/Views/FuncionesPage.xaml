@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobil.Views.FuncionesPage"
+             Title="Funciones">
+    <ListView x:Name="ListFunciones" ItemSelected="Item_Selecte">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <StackLayout Orientation="Horizontal">   
+                            <Label Text="{Binding Cinema}" FontAttributes="Bold" />
+                            <StackLayout Orientation="Horizontal">
+                                <Entry x:Name="entrycantidad" Placeholder="Cantidad" FontSize="10"></Entry>
+                                <Label Text="{Binding Sala}" FontSize="10" />
+                                <Label Text="{Binding Ciudad}" FontSize="10" />
+                                <Label Text="{Binding Precio}" FontSize="10" />                                
+                            </StackLayout>
+                        </StackLayout >
+                    </Grid>
+                </ViewCell>
+
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
